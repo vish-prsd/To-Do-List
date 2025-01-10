@@ -8,7 +8,6 @@ function TodoList(){
   const handleInputChange = (e) => {
     setNewTask( e.target.value );
   }
-  
   const addTask = () => {
     if(newTask.trim() !== ''){
       setTasks((t) => [...t,newTask])
